@@ -1,26 +1,59 @@
-$font-stack: OpenSans, Merriweather, sans-serif;
+$fm:  Merriweather,sans-serif;
+$fo: OpenSans, sans-serif;
 @font-face {
   font-family: "Merriweather";
   font-style: normal;
-  font-weight: 600;
   src: url(../fonts/Merriweather-Regular.ttf);
 }
 @font-face{
   font-family: "OpenSans";
   font-style: normal;
-  font-weight: 400;
   src: url(../fonts/OpenSans-Regular.ttf);
 }
-
-
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 body {
-  font-family: $font-stack;
-  #logo {
-    width: 10rem;
+  width: 100%;
+  max-width: 100%;
+  font-family: $fm;
+  color: #ffffff;
+  font-size: 55px;
+  font-weight: 100;
+  line-height: 90px;
+}
+footer{
+  color:black;
+}
+container{
+  display: block;
+  background: black;
+  height: 100vh;
+}
+.first{
+  background:red url("../img/min_image.jpg") no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .first_top{
+    width: 750px;
+    height: 320px;
   }
-  .container {
-    img {
-      width: 20rem;
+  .heading{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    border: 1px solid rgba(143, 143, 143, 0.5);
+    b{
+      color: #f7ac53;
+      font-weight: normal;
     }
+  }
+  .first_list{
+    height: 20%;
   }
 }
