@@ -1,10 +1,17 @@
-$font-stack: -apple-system, BlinkMacSystemFont, Roboto, "Open Sans", "Helvetica Neue", sans-serif;
+$font-stack: OpenSans, Merriweather, sans-serif;
 @font-face {
-  font-family: "Roboto";
+  font-family: "Merriweather";
+  font-style: normal;
+  font-weight: 600;
+  src: url(../fonts/Merriweather-Regular.ttf);
+}
+@font-face{
+  font-family: "OpenSans";
   font-style: normal;
   font-weight: 400;
-  src: url(../fonts/Roboto-Regular.ttf);
+  src: url(../fonts/OpenSans-Regular.ttf);
 }
+
 
 body {
   font-family: $font-stack;
